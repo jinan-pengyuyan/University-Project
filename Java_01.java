@@ -1,3 +1,5 @@
-public static viod main(String[] args){
-  system.out.print("hello github");
+public class java_01 {
+	public static void main(String[] args) {
+		System.out.print("hello github");
+	}
 }
