@@ -16,7 +16,7 @@ jobs:
           java-version: '17'   # 如果需要其他版本可改为 '8', '11', '21' 等
 
       - name: Compile Java code
-        run: javac Main.java
+        run: javac java_01.java
 
       - name: Run Java code
         run: java Main
