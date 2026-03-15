@@ -8,11 +8,11 @@ public class java_02 {
     int[] nums = new int[n];
     System.out.println("请输入要排序的数");
     int i;
-    for(i = 0, i < n, i++){
+    for(i = 0; i < n; i++){
     	nums[i] = reader.nextInt();
     }
     bubble_sort(nums, n);
-    for(i = 0, i < n, i++){
+    for(i = 0; i < n; i++){
       System.out.print(nums[i] + " ");
     }
   }
@@ -23,8 +23,8 @@ public class java_02 {
     int i;
     while(sort > 0){
       last = 0;
-      for(i = 1, i < sort, i++){
-        if(nums[i-1] > nums[i+1]){
+      for(i = 1; i < sort; i++){
+        if(nums[i-1] > nums[i]){
           int temp = nums[i-1];
           nums[i-1] = nums[i];
           nums[i] = temp;
