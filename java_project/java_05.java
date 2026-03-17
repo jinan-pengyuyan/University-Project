@@ -22,6 +22,9 @@ public class java_05{
     for(int l = 2; l <= len; l++){
       for(int i = 0; i < len; i++){
         int j = i + l -1;
+        if(j >= len) {
+        	break;
+        }
         if(str[i] == str[j]){
           if(l < 3){
             dp[i][j] = true;
@@ -30,7 +33,7 @@ public class java_05{
           }
         }
         else{
-          dp][i][j] = false;
+          dp[i][j] = false;
         }
         if(dp[i][j] && l > maxlen){
           maxlen = l;
@@ -40,6 +43,8 @@ public class java_05{
     }
     return s.substring(begin,begin+maxlen);
   }
+}
         
           
       
+
